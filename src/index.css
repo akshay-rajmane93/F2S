@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mulish', sans-serif;
+  color: white;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +15,870 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+    background-image: linear-gradient(black,skyblue,red); 
+  background-repeat: no-repeat; 
+ width: 100vw;
+  min-height: 100vh;
+}
+
+
+
+.app{
+  min-height: 100vh;
+  display: flex!important;
+  flex-direction: column!important;
+ justify-content: space-between!important; 
+ 
+}
+.navv{
+  background-image:radial-gradient(black,red); 
+  clip-path: polygon(0 0, 100% 0, 92% 100%, 8% 100%);
+}
+
+.nav-link:hover{
+  color:lightskyblue!important;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.navbar-brand{
+  color: white;
+ 
+}
+
+.navul .nav-link {
+  color: grey;
+}
+.menu_nav_active{
+  color:  white!important;
+  font-weight: bold;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.main_featur{
+  display: flex;
+  border:solid black;
+  
+}
+.feature ul{
+  margin-left:0;
+  align-self: center;
+  
+}
+.feature li{
+  list-style-image: url('../src//Images/dumbel2.png');
+}
+
+
+@keyframes mymove {
+  from {transform:translateY(10%);}
+  to {transform:translateY(30%);}
+}
+
+
+.about{
+  height: auto;
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-bottom: 7em;
+}
+
+
+.feature{
+  text-align: center;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+ 
+}
+.feature ul{
+  padding-left: 5rem;
+  text-align:start;
+  font-size: 1.5rem;
+  animation: anime 1s linear 2 alternate;
+}
+@keyframes anime{
+  from{
+  
+    transform:translateX(0%);
+   
+  }
+  to{
+   
+    transform: translateX(5%);
+   
+  }
+}
+.imgdiv{
+ display: flex;
+ flex-direction: row;
+  text-align: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.trainer {
+  max-width: 100%;
+  
+}
+.trainer h1{
+  text-align: center;
+}
+.trai{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.trai img{
+    max-width:90%;
+    box-shadow: 0 .3rem .3rem gray ;
+    height: 35%;
+    border-radius: 2rem;
+    padding-bottom: .2em;
+}
+footer{
+  width: 100%;
+  height: auto;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: gray;  
+}
+footer p{
+  vertical-align:middle;
+  padding: 0;
+  color: white;
+  font-size: 1rem;
+  color: black;
+  font-weight: bold;
+ ;
+}
+.footer_icons{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
+}
+.footer_icons a{
+  text-decoration: none;
+}
+.footer_btn{
+  background-color: skyblue;
+  border-radius: 2em;
+  width: 2em;
+  height: 2em;
+  margin: 0.5em;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+.footer_btn span{
+  color: black;
+  font-size: 1.5rem;
+  margin-left: 0.51em;
+}
+.footer_adress{
+  padding-top: 1.5em;
+}
+.footer_icons i{
+  font-size: 1.5rem;
+  color: black;
+  margin-left: .2em;
+}
+
+.footer_btn:hover{
+ width: 10em;
+ transition: .51s ease;
+}
+
+.footer_nav{
+  color: white;
+  border:solid lightyellow;
+  padding: .5em;
+  text-decoration-line: none;
+  border-radius: 2em;
+}
+
+
+.footer_nav:hover{
+  background-color: skyblue;
+  color: black;
+  transition: .8s ease;
+}
+.footer_btn p{
+ 
+  color: black;
+  margin-top: .5em;
+  
+}
+.footer_bottom{
+  padding-top: 1em;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.cardss{
+    background-color: transparent;
+}
+.comman{
+  width: 100%;
+}
+.animated{
+ animation: mymove 3s linear infinite alternate;
+}
+
+.card{
+  background-color: transparent!important;
+}
+.cardss{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card img:hover{
+  transform: scale(1.1,1.1);
+  transition: .3s linear;
+}
+.card_btn{
+  margin-top: 1em;
+}
+
+.home{
+  width: 100%;
+  height: 100%;
+ 
+  background-image: url('../src/Images/f2slogo2.png');
+  background-repeat: no-repeat;
+  background-size:0vh;
+  background-blend-mode:lighten;
+  animation: backimg 3s linear infinite alternate;
+  padding-top: 3.5em;
+  padding-bottom: 3em;
+}
+
+
+@keyframes backimg{
+  
+    from {
+      background-size:20%;
+      background-position: 10vh;
+    }
+    to {
+      background-size: 40%;
+      background-position:10vw;
+    
+      
+    }
+  }
+  .brand_name{
+    color: red;
+    animation: namecolor 3s linear infinite alternate;
+  }
+
+  @keyframes namecolor{
+    from{
+      color: lightyellow;
+    }
+    to{
+      color: red;
+    }
+  }
+.combtn{
+  color: white;
+  border:solid lightyellow;
+  padding: .5em;
+  text-decoration-line: none;
+  border-radius: 2em;
+}
+
+
+.combtn:hover{
+  background-color: red;
+  color: white;
+  transition: .8s ease;
+}
+.commanspan{
+  color: lightyellow;
+  font-weight: bold;
+}
+.contact_div{
+  height: auto;
+}
+
+.main_contact_div a{
+  margin-top: .5em;
+  margin-bottom: .5em;
+
+}
+.main_contact_div  .btn{
+   border-radius: 2em;
+   
+   border:solid .2em linen;
+    color: black;
+    font-weight: bold;
+}
+.main_contact_div  .btn:hover{
+  color: white;
+  background-color: lightsteelblue;
+  transition: .5s ease;
+}
+
+
+/* **************  media query stars here  ***********************/
+
+/************ for hover ***********************/
+@media (hover:hover){
+  .combtn:hover{
+    background-color: red;
+    color: white;
+  }
+  .nav-link:hover{
+    color:lightskyblue!important;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  .card img:hover{
+    transform: scale(1.1,1.1);
+    transition: .3s linear;
+  }
+}
+
+
+
+/******************* media from 320 to 480 potrait phones****************************/
+@media (min-width:320px) and (max-width:480px){
+  .home{
+    
+ 
+    background-repeat: no-repeat;
+    background-size:contain;
+   background-repeat: no-repeat;
+    animation: backimg 3s linear infinite alternate;
+  }
+  @keyframes backimg{
+  
+    from {
+      background-size:20%;
+      background-position: top;
+    }
+    to {
+      background-size: 40%;
+      background-position:top;
+    
+      
+    }
+  }
+
+  footer{
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     justify-content: space-around;
+     align-items: center;
+   }
+ 
+   .footer_icons{
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+  }
+  .footer_bottom{
+   padding-top: .5em;
+ }
+
+  @keyframes mymove {
+    from {transform:translateY(10%);}
+    to {transform:translateY(30%);}
+  }
+  
+  
+  .feature ul{
+    font-size: 1.3rem;
+    padding: 1em;
+  }
+
+  
+ 
+
+    .imgdiv{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+     
+    }
+    .imgdiv img{
+      width: 60%;
+      margin-top: .5em;
+    }
+    .trai h4{
+     
+      margin-top: .5em;
+
+    }
+    .trai p{
+     
+      margin-top: 0;
+      padding: 0;
+
+    }
+    .trai h5{
+      margin-top: 0;
+      padding: 0;
+    }
+  
+    .about_contents{
+      margin-top: 0;
+      padding: 0;
+      
+    }
+    .comman{
+      margin-top: 0%;
+    }
+    .combtn{
+      margin-bottom: 3em;
+    }
+    .header_img img{
+      padding-bottom: 4em;
+      
+      margin-bottom: 2em;
+      
+    }
+
+    .main_contact_div{
+     
+      height: 100%;
+    }
+    .main_contact_div a{
+      margin-top: .5em;
+    }
+}
+
+
+/******************* media from 481 to 768 landscape for mobile****************************/
+
+@media (min-width:481px) and (max-width:768px){
+
+
+@keyframes backimg{
+  
+  
+    from {
+      background-size:20%;
+    background-position-x: 50%;
+    background-position-y: 20%;
+    }
+    to {
+      background-size: 30%;
+      background-position-x: 50%;
+    background-position-y: 20%;
+    
+      
+    }
+    
+  }
+  .header_img{
+    padding-bottom: 8em;
+   
+   
+  }
+  @keyframes mymove {
+    from {transform:translateY(12%);}
+    to {transform:translateY(28%);}
+  }
+  footer{
+  
+     
+    
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+  
+ }
+ .footer_icons{
+   display: flex;
+   justify-content: center;
+   padding-top: 1em;
+ }
+ .footer_bottom{
+  padding-top: .5em;
+}
+
+
+  .imgdiv{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+   
+  }
+  .imgdiv img{
+    width: 50%;
+    margin-top: 2em;
+  }
+  .trai h4{
+   
+    margin-top: 0.5em;
+
+  }
+  .trai p{
+   
+    margin-top: 0;
+    padding: 0;
+
+  }
+  .trai h5{
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .main_contact_div a{
+    margin-bottom: 1em;
+    margin-top: .51em;
+  }
+
+  .service{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/******************* media from 768 to 1024 potrait for ipad****************************/
+@media (min-width:768px) and (max-width: 1024px){
+  .home{
+    background-repeat: no-repeat;
+    background-size:contain;
+ 
+    animation: backimg 3s linear infinite alternate;
+    border: solid black;
+    padding-top: 15em;
+  }
+  @keyframes backimg{
+  
+    from {
+      background-size:20%;
+      background-position-x: 50%;
+      background-position-y: 0%;
+    }
+    to {
+      background-size: 40%;
+      background-position-x: 50%;
+      background-position-y: 0%;
+      
+    }
+  }
+  .comman .col-md-6{
+    width: 100%;
+  }
+  .comman{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .comman h1{
+    font-size: 4rem;
+  }
+  .comman h2{
+    font-size: 3rem;
+  }
+  .combtn{
+    font-size: 2rem;
+  }
+  footer .col-md-6{
+    width: 100%;
+  }
+  footer{
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     justify-content: space-around;
+     align-items: center;
+   }
+ 
+   .footer_icons{
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+  }
+  .footer_bottom{
+   padding-top: .5em;
+ }
+
+  @keyframes mymove {
+    from {transform:translateY(10%);}
+    to {transform:translateY(30%);}
+  }
+  
+  .card_main .col-md-4{
+    width: 100%;
+  }
+  .cardss h6,p{
+    font-size: 1.5rem;
+  }
+  .cardss .btn{
+    font-size: 1.5rem;
+  }
+  .main_featur .col-md-5{
+    width: 100%;
+  }
+  .main_featur .col-md-7{
+    width: 100%;
+    border: solid black;
+  }
+  
+  .feature{
+    padding-top: 1em;
+  }
+  .feature h1{
+    font-size: 2.5rem;
+  }
+
+  .feature ul{
+    font-size: 2rem;
+    padding: 1em;
+  }
+    .imgdiv{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      
+    }
+
+    .imgdiv img{
+      width:60%;
+      margin-top: .5em;
+      height: auto;
+    }
+    .trainer h1{
+      font-size: 2.5rem;
+    }
+    .trai h4{
+     font-size: 2rem;
+      margin-top: .5em;
+
+    }
+    .trai p{
+     
+      margin-top: 0;
+      padding: 0;
+
+    }
+    .trai h5{
+      margin-top: 0;
+      padding: 0;
+    }
+  
+    .about_contents{
+      margin-top: 0;
+      padding: 0;
+      
+    }
+    .comman{
+      margin-top: 0%;
+    }
+    .combtn{
+      margin-bottom: 3em;
+    }
+    .header_img img{
+      padding-bottom: 4em;
+      
+      margin-bottom: 2em;
+      
+    }
+
+    .main_contact_div{
+     
+      height: 100%;
+    }
+
+    
+    .main_contact_div a{
+      margin-top: .5em;
+    }
+
+}
+
+
+/******************* media from 768 to 1024 landscape for ipad****************************/
+
+@media(min-width:769px) and (max-width:1024px) and (orientation: landscape){
+  .home{
+    
+    align-items: center;
+    background-repeat: no-repeat;
+    padding-top:4em;
+    padding-bottom: 4em;
+    height: 100%;
+  }
+  @keyframes backimg{
+    from {
+      background-size:20%;
+    background-position-x: 30%;
+    background-position-y: 20%;
+    }
+    to {
+      background-size: 30%;
+      background-position-x: 30%;
+    background-position-y: 20%;
+    }
+  }
+  @keyframes mymove {
+    from {transform:translateY(20%);}
+    to {transform:translateY(40%);}
+  }
+  .comman .col-md-6{
+    width: 50%;
+  }
+ 
+  .comman h1{
+    font-size: 3rem;
+  }
+  .comman h2{
+    font-size: 2rem;
+  }
+  .combtn{
+    font-size: 1rem;
+  }
+
+  footer .col-md-6{
+    width: 50%;
+  }
+
+  .card_main .col-md-4{
+    width: 33.33%;
+  }
+  .cardss h6,p{
+    font-size: 1rem;
+  }
+  .cardss .btn{
+    font-size: 1rem;
+  }
+ 
+  .main_featur .col-md-5{
+    width: 41.66%;
+  }
+  .main_featur .col-md-7{
+    width: 58.33%;
+  }
+ 
+  .feature{
+    padding-top: 1em;
+  }
+  .feature h1{
+    font-size: 2.5rem;
+  }
+
+  .feature ul{
+    font-size: 1.5rem;
+    padding: 1em;
+  }
+    .imgdiv{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: flex-start;
+      flex-wrap:wrap;
+    }
+
+    .imgdiv img{
+      width:80%;
+      height: auto;
+      margin-top: .5em;
+    }
+    .trainer h1{
+      font-size: 2.5rem;
+      padding-top: .5em;
+    }
+    .trai h4{
+     font-size: 1.5rem;
+      margin-top: .5em;
+
+    }
+  
+  .trai p{
+    font-size:1.2rem;
+}
+
+
+.about{
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+.main_contact_div a{
+  margin-bottom: 1em;
+  margin-top: .51em;
+}
+}
+
+
+/******************* media from 1025 to 1200****************************/
+@media (min-width:1025px)and (max-width:1200px){
+  .main_featur{
+    display: flex;
+    justify-content: space-between;
+    padding-top: .5em;
+  }
+  .feature ul{
+    margin-top: 1em;
+  }
+ 
+  .imgdiv img{
+      margin-top: 1em;
+  }
+
+
+  .trai h4{
+        font-size:1.5rem;
+        margin-top: 1.5em;
+  }
+  .trai p{
+    font-size:1.2rem;
+}
+.about{
+  padding-bottom: 6em;
+  
+}
+.main_contact_div a{
+  margin-bottom: 1em;
+  margin-top: .51em;
+}
+
+}
+
+/******************* media from 1201 extra large mostly landscape****************************/
+@media (max-width:1201px){
+  
+  .feature ul{
+    color: red;
+    padding-top: 2em;
+  }
 }
